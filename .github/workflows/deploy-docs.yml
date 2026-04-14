@@ -19,7 +19,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y doxygen graphviz
-          touch html/.nojekyll
+          mkdir html && touch html/.nojekyll
 
       - name: Generate Documentation
         run: doxygen Doxyfile
