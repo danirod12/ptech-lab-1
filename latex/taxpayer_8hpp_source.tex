@@ -1,0 +1,67 @@
+\doxysection{taxpayer.\+hpp}
+\hypertarget{taxpayer_8hpp_source}{}\label{taxpayer_8hpp_source}\mbox{\hyperlink{taxpayer_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PTECH\_TAXPAYER\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PTECH\_TAXPAYER\_HPP}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTaxpayer}{Taxpayer}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ std::string\ \mbox{\hyperlink{classTaxpayer_ad72ebfd4e2438bec5ae1c308404d04ab}{fio}};}
+\DoxyCodeLine{00018\ \ \ \ \ std::string\ \mbox{\hyperlink{classTaxpayer_a3a39437e2ac9bf272f0a7a0c5c08dd59}{inn}};}
+\DoxyCodeLine{00022\ \ \ \ \ std::string\ \mbox{\hyperlink{classTaxpayer_adc91761f9097d0d34cb1022db342c32e}{address}};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classTaxpayer_a2c154eb25ec977d83f5ebab41b96bc90}{tax\_amount}};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{classTaxpayer_afc1da74767ee87bc932825e1b7687cc8}{Taxpayer}}(std::string\ f,\ std::string\ i,\ std::string\ a,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ t)}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classTaxpayer_ad72ebfd4e2438bec5ae1c308404d04ab}{fio}}(std::move(f)),\ \mbox{\hyperlink{classTaxpayer_a3a39437e2ac9bf272f0a7a0c5c08dd59}{inn}}(std::move(i)),\ \mbox{\hyperlink{classTaxpayer_adc91761f9097d0d34cb1022db342c32e}{address}}(std::move(a)),\ \mbox{\hyperlink{classTaxpayer_a2c154eb25ec977d83f5ebab41b96bc90}{tax\_amount}}(t)\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classTaxpayer_ae47dba2d624c7598103f5f80bb626b22}{operator<}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classTaxpayer}{Taxpayer}}\ \&other)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classTaxpayer_ad72ebfd4e2438bec5ae1c308404d04ab}{fio}}\ !=\ other.\mbox{\hyperlink{classTaxpayer_ad72ebfd4e2438bec5ae1c308404d04ab}{fio}}\ ?\ \mbox{\hyperlink{classTaxpayer_ad72ebfd4e2438bec5ae1c308404d04ab}{fio}}\ <\ other.\mbox{\hyperlink{classTaxpayer_ad72ebfd4e2438bec5ae1c308404d04ab}{fio}}\ :\ \mbox{\hyperlink{classTaxpayer_a3a39437e2ac9bf272f0a7a0c5c08dd59}{inn}}\ <\ other.\mbox{\hyperlink{classTaxpayer_a3a39437e2ac9bf272f0a7a0c5c08dd59}{inn}};}
+\DoxyCodeLine{00046\ \ \ \ \ \}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classTaxpayer_af215603b04133aa81bd16f143100fc9e}{operator>}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classTaxpayer}{Taxpayer}}\ \&other)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ other\ <\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00055\ \ \ \ \ \}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classTaxpayer_a8f2c1980ddf1cf30681ec131c616ef37}{operator<=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classTaxpayer}{Taxpayer}}\ \&other)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !(*\textcolor{keyword}{this}\ >\ other);}
+\DoxyCodeLine{00064\ \ \ \ \ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classTaxpayer_ae90c25909f7078d8ecc6f73e40c9a479}{operator>=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classTaxpayer}{Taxpayer}}\ \&other)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !(*\textcolor{keyword}{this}\ <\ other);}
+\DoxyCodeLine{00073\ \ \ \ \ \}}
+\DoxyCodeLine{00074\ \};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00082\ \textcolor{keyword}{static}\ std::vector<Taxpayer>\ \mbox{\hyperlink{taxpayer_8hpp_a3e0e32a348a7ffc4cd8cdd645509d031}{readData}}(\textcolor{keyword}{const}\ std::string\ \&filename)\ \{}
+\DoxyCodeLine{00083\ \ \ \ \ std::vector<Taxpayer>\ data;}
+\DoxyCodeLine{00084\ \ \ \ \ std::ifstream\ file(filename);}
+\DoxyCodeLine{00085\ \ \ \ \ std::string\ line;}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordflow}{while}\ (std::getline(file,\ line))\ \{}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (line.empty())\ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ std::stringstream\ ss(line);}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ std::string\ f,\ i,\ a,\ t\_str;}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ std::getline(ss,\ f,\ \textcolor{charliteral}{','});}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ std::getline(ss,\ i,\ \textcolor{charliteral}{','});}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ std::getline(ss,\ a,\ \textcolor{charliteral}{','});}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ std::getline(ss,\ t\_str,\ \textcolor{charliteral}{','});}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ t\ =\ std::stod(t\_str);}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ data.emplace\_back(f,\ i,\ a,\ t);}
+\DoxyCodeLine{00098\ \ \ \ \ \}}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordflow}{return}\ data;}
+\DoxyCodeLine{00100\ \}}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00108\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{taxpayer_8hpp_a701477fe6e53c98c9f203618327cf622}{writeData}}(\textcolor{keyword}{const}\ std::string\ \&filename,\ \textcolor{keyword}{const}\ std::vector<Taxpayer>\ \&data)\ \{}
+\DoxyCodeLine{00109\ \ \ \ \ std::ofstream\ file(filename);}
+\DoxyCodeLine{00110\ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)xEF\(\backslash\)xBB\(\backslash\)xBF"{}};\ \textcolor{comment}{//\ bom\ utf-\/8}}
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\ \&p:\ data)\ \{}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ file\ <<\ p.fio\ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ p.inn\ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ p.address\ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ p.tax\_amount\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00113\ \ \ \ \ \}}
+\DoxyCodeLine{00114\ \}}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//PTECH\_TAXPAYER\_HPP}}
+
+\end{DoxyCode}

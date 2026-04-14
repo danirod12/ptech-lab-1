@@ -1,0 +1,44 @@
+\doxysection{generate\+\_\+data.\+py File Reference}
+\hypertarget{generate__data_8py}{}\label{generate__data_8py}\index{generate\_data.py@{generate\_data.py}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacegenerate__data}{generate\+\_\+data}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespacegenerate__data_a0ad6c338c107ac4908af99eeffe7fb80}{generate\+\_\+data.\+name\+\_\+dict}}
+\item 
+dict \mbox{\hyperlink{namespacegenerate__data_abc36a95f3ac65ef8ba8b82a34137cb7e}{generate\+\_\+data.\+address\+\_\+dict}}
+\item 
+list \mbox{\hyperlink{namespacegenerate__data_ad328960c7dd032a3b4b2977c07872bd3}{generate\+\_\+data.\+sizes}}
+\item 
+str \mbox{\hyperlink{namespacegenerate__data_a8ccc7da5af8e7625d60665ee0dfa8e1c}{generate\+\_\+data.\+filename}} = f"{}./data/data\+\_\+\{size\}.csv"{}
+\item 
+\mbox{\hyperlink{namespacegenerate__data_aaf60c4cfe49afe1b48b4f9e1a2df5672}{generate\+\_\+data.\+encoding}}
+\item 
+\mbox{\hyperlink{namespacegenerate__data_a0765f876957a56230771293d9efd4013}{generate\+\_\+data.\+gender}} = random.\+choice(\mbox{[}"{}male"{}, "{}female"{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacegenerate__data_af9cabdae946941f937d3a226d48b46c4}{generate\+\_\+data.\+first}} = random.\+choice(\mbox{\hyperlink{namespacegenerate__data_a0ad6c338c107ac4908af99eeffe7fb80}{name\+\_\+dict}}\mbox{[}"{}male\+\_\+first\+\_\+names"{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacegenerate__data_a4f5e66e4c94756b8110fb98d4f00f929}{generate\+\_\+data.\+pat}} = random.\+choice(\mbox{\hyperlink{namespacegenerate__data_a0ad6c338c107ac4908af99eeffe7fb80}{name\+\_\+dict}}\mbox{[}"{}male\+\_\+patronymics"{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacegenerate__data_aa8ead2ae7b6d26e490548e5a83fad1ad}{generate\+\_\+data.\+surname}} = random.\+choice(\mbox{\hyperlink{namespacegenerate__data_a0ad6c338c107ac4908af99eeffe7fb80}{name\+\_\+dict}}\mbox{[}"{}male\+\_\+surnames"{}\mbox{]})
+\item 
+str \mbox{\hyperlink{namespacegenerate__data_a0590654c14f3d5b36632dfa00fd232b3}{generate\+\_\+data.\+fio}} = f"{}\{\mbox{\hyperlink{namespacegenerate__data_aa8ead2ae7b6d26e490548e5a83fad1ad}{surname}}\} \{\mbox{\hyperlink{namespacegenerate__data_af9cabdae946941f937d3a226d48b46c4}{first}}\} \{\mbox{\hyperlink{namespacegenerate__data_a4f5e66e4c94756b8110fb98d4f00f929}{pat}}\}"{}
+\item 
+str \mbox{\hyperlink{namespacegenerate__data_aa959e15fb718f50fa8d24a55fa2cb9ef}{generate\+\_\+data.\+inn}} = f"{}\{random.\+randint(100000000000, 999999999999)\}"{}
+\item 
+\mbox{\hyperlink{namespacegenerate__data_ad384f1d1a6e25a430e1695e03054a141}{generate\+\_\+data.\+house}} = random.\+randint(1, 250)
+\item 
+\mbox{\hyperlink{namespacegenerate__data_aebcfd39c9f7cfd9bc38c91bab82d0120}{generate\+\_\+data.\+street}} = random.\+choice(\mbox{\hyperlink{namespacegenerate__data_abc36a95f3ac65ef8ba8b82a34137cb7e}{address\+\_\+dict}}\mbox{[}"{}streets"{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacegenerate__data_a50b450cc66aa01301b088a54d99c94b1}{generate\+\_\+data.\+city}} = random.\+choice(\mbox{\hyperlink{namespacegenerate__data_abc36a95f3ac65ef8ba8b82a34137cb7e}{address\+\_\+dict}}\mbox{[}"{}cities"{}\mbox{]})
+\item 
+str \mbox{\hyperlink{namespacegenerate__data_a7f8edc74799a5a6fa0eeb54f0bd9b8b9}{generate\+\_\+data.\+address}} = f"{}г. \{\mbox{\hyperlink{namespacegenerate__data_a50b450cc66aa01301b088a54d99c94b1}{city}}\} ул. \{\mbox{\hyperlink{namespacegenerate__data_aebcfd39c9f7cfd9bc38c91bab82d0120}{street}}\} д. \{\mbox{\hyperlink{namespacegenerate__data_ad384f1d1a6e25a430e1695e03054a141}{house}}\}"{}
+\item 
+\mbox{\hyperlink{namespacegenerate__data_ae89b62abcb682815daa5f3282fc07a13}{generate\+\_\+data.\+tax\+\_\+amount}} = round(random.\+uniform(1000.\+0, 75000.\+0), 2)
+\item 
+str \mbox{\hyperlink{namespacegenerate__data_a8866c3072d4aee7a8bde5d1079b76c33}{generate\+\_\+data.\+line}} = f"{}\{\mbox{\hyperlink{namespacegenerate__data_a0590654c14f3d5b36632dfa00fd232b3}{fio}}\},\{\mbox{\hyperlink{namespacegenerate__data_aa959e15fb718f50fa8d24a55fa2cb9ef}{inn}}\},\{\mbox{\hyperlink{namespacegenerate__data_a7f8edc74799a5a6fa0eeb54f0bd9b8b9}{address}}\},\{\mbox{\hyperlink{namespacegenerate__data_ae89b62abcb682815daa5f3282fc07a13}{tax\+\_\+amount}}\}\textbackslash{}n"{}
+\end{DoxyCompactItemize}

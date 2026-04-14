@@ -1,0 +1,144 @@
+\doxysection{Taxpayer Class Reference}
+\hypertarget{classTaxpayer}{}\label{classTaxpayer}\index{Taxpayer@{Taxpayer}}
+
+
+{\ttfamily \#include $<$taxpayer.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTaxpayer_afc1da74767ee87bc932825e1b7687cc8}{Taxpayer}} (std\+::string f, std\+::string i, std\+::string a, const double t)
+\item 
+bool \mbox{\hyperlink{classTaxpayer_ae47dba2d624c7598103f5f80bb626b22}{operator$<$}} (const \mbox{\hyperlink{classTaxpayer}{Taxpayer}} \&other) const
+\item 
+bool \mbox{\hyperlink{classTaxpayer_af215603b04133aa81bd16f143100fc9e}{operator$>$}} (const \mbox{\hyperlink{classTaxpayer}{Taxpayer}} \&other) const
+\item 
+bool \mbox{\hyperlink{classTaxpayer_a8f2c1980ddf1cf30681ec131c616ef37}{operator$<$=}} (const \mbox{\hyperlink{classTaxpayer}{Taxpayer}} \&other) const
+\item 
+bool \mbox{\hyperlink{classTaxpayer_ae90c25909f7078d8ecc6f73e40c9a479}{operator$>$=}} (const \mbox{\hyperlink{classTaxpayer}{Taxpayer}} \&other) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classTaxpayer_ad72ebfd4e2438bec5ae1c308404d04ab}{fio}}
+\item 
+std\+::string \mbox{\hyperlink{classTaxpayer_a3a39437e2ac9bf272f0a7a0c5c08dd59}{inn}}
+\item 
+std\+::string \mbox{\hyperlink{classTaxpayer_adc91761f9097d0d34cb1022db342c32e}{address}}
+\item 
+double \mbox{\hyperlink{classTaxpayer_a2c154eb25ec977d83f5ebab41b96bc90}{tax\+\_\+amount}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a taxpayer with their details such as name, last name, inn and tax amount 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classTaxpayer_afc1da74767ee87bc932825e1b7687cc8}\label{classTaxpayer_afc1da74767ee87bc932825e1b7687cc8} 
+\index{Taxpayer@{Taxpayer}!Taxpayer@{Taxpayer}}
+\index{Taxpayer@{Taxpayer}!Taxpayer@{Taxpayer}}
+\doxysubsubsection{\texorpdfstring{Taxpayer()}{Taxpayer()}}
+{\footnotesize\ttfamily Taxpayer\+::\+Taxpayer (\begin{DoxyParamCaption}\item[{std\+::string}]{f,  }\item[{std\+::string}]{i,  }\item[{std\+::string}]{a,  }\item[{const double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & Full name of the taxpayer \\
+\hline
+{\em i} & \doxylink{classTaxpayer}{Taxpayer} Identification Number (INN) \\
+\hline
+{\em a} & Address of the taxpayer \\
+\hline
+{\em t} & Amount of tax paid this year by the taxpayer \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classTaxpayer_ae47dba2d624c7598103f5f80bb626b22}\label{classTaxpayer_ae47dba2d624c7598103f5f80bb626b22} 
+\index{Taxpayer@{Taxpayer}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Taxpayer@{Taxpayer}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Taxpayer\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTaxpayer}{Taxpayer}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another taxpayer to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if this taxpayer is less than the other taxpayer, false otherwise. Comparison is done first by full name (fio) and then by inn if full names are equal. 
+\end{DoxyReturn}
+\Hypertarget{classTaxpayer_a8f2c1980ddf1cf30681ec131c616ef37}\label{classTaxpayer_a8f2c1980ddf1cf30681ec131c616ef37} 
+\index{Taxpayer@{Taxpayer}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Taxpayer@{Taxpayer}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool Taxpayer\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTaxpayer}{Taxpayer}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another taxpayer to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if this taxpayer is equal to the other taxpayer, false otherwise. Two taxpayers are considered equal if they have the same full name (fio) and inn. 
+\end{DoxyReturn}
+\Hypertarget{classTaxpayer_af215603b04133aa81bd16f143100fc9e}\label{classTaxpayer_af215603b04133aa81bd16f143100fc9e} 
+\index{Taxpayer@{Taxpayer}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Taxpayer@{Taxpayer}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Taxpayer\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTaxpayer}{Taxpayer}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another taxpayer to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if this taxpayer is equal to the other taxpayer, false otherwise. Two taxpayers are considered equal if they have the same full name (fio) and inn. 
+\end{DoxyReturn}
+\Hypertarget{classTaxpayer_ae90c25909f7078d8ecc6f73e40c9a479}\label{classTaxpayer_ae90c25909f7078d8ecc6f73e40c9a479} 
+\index{Taxpayer@{Taxpayer}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Taxpayer@{Taxpayer}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool Taxpayer\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTaxpayer}{Taxpayer}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another taxpayer to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if this taxpayer is equal to the other taxpayer, false otherwise. Two taxpayers are considered equal if they have the same full name (fio) and inn. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classTaxpayer_adc91761f9097d0d34cb1022db342c32e}\label{classTaxpayer_adc91761f9097d0d34cb1022db342c32e} 
+\index{Taxpayer@{Taxpayer}!address@{address}}
+\index{address@{address}!Taxpayer@{Taxpayer}}
+\doxysubsubsection{\texorpdfstring{address}{address}}
+{\footnotesize\ttfamily std\+::string Taxpayer\+::address}
+
+Address of the taxpayer \Hypertarget{classTaxpayer_ad72ebfd4e2438bec5ae1c308404d04ab}\label{classTaxpayer_ad72ebfd4e2438bec5ae1c308404d04ab} 
+\index{Taxpayer@{Taxpayer}!fio@{fio}}
+\index{fio@{fio}!Taxpayer@{Taxpayer}}
+\doxysubsubsection{\texorpdfstring{fio}{fio}}
+{\footnotesize\ttfamily std\+::string Taxpayer\+::fio}
+
+Full name of the taxpayer \Hypertarget{classTaxpayer_a3a39437e2ac9bf272f0a7a0c5c08dd59}\label{classTaxpayer_a3a39437e2ac9bf272f0a7a0c5c08dd59} 
+\index{Taxpayer@{Taxpayer}!inn@{inn}}
+\index{inn@{inn}!Taxpayer@{Taxpayer}}
+\doxysubsubsection{\texorpdfstring{inn}{inn}}
+{\footnotesize\ttfamily std\+::string Taxpayer\+::inn}
+
+\doxylink{classTaxpayer}{Taxpayer} Identification Number (INN) \Hypertarget{classTaxpayer_a2c154eb25ec977d83f5ebab41b96bc90}\label{classTaxpayer_a2c154eb25ec977d83f5ebab41b96bc90} 
+\index{Taxpayer@{Taxpayer}!tax\_amount@{tax\_amount}}
+\index{tax\_amount@{tax\_amount}!Taxpayer@{Taxpayer}}
+\doxysubsubsection{\texorpdfstring{tax\_amount}{tax\_amount}}
+{\footnotesize\ttfamily double Taxpayer\+::tax\+\_\+amount}
+
+Amount of tax paid this year by the taxpayer 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{taxpayer_8hpp}{taxpayer.\+hpp}}\end{DoxyCompactItemize}

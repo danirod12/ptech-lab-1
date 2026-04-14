@@ -1,0 +1,41 @@
+\doxysection{misc.\+hpp File Reference}
+\hypertarget{misc_8hpp}{}\label{misc_8hpp}\index{misc.hpp@{misc.hpp}}
+{\ttfamily \#include $<$ctime$>$}\newline
+Include dependency graph for misc.\+hpp\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename F , typename T $>$ }\\double \mbox{\hyperlink{misc_8hpp_ade19e786d19b867d374dc1f79b6864b5}{measure\+\_\+func}} (F func, std\+::vector$<$ T $>$ \&data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{misc_8hpp_ade19e786d19b867d374dc1f79b6864b5}\label{misc_8hpp_ade19e786d19b867d374dc1f79b6864b5} 
+\index{misc.hpp@{misc.hpp}!measure\_func@{measure\_func}}
+\index{measure\_func@{measure\_func}!misc.hpp@{misc.hpp}}
+\doxysubsubsection{\texorpdfstring{measure\_func()}{measure\_func()}}
+{\footnotesize\ttfamily template$<$typename F , typename T $>$ \\
+double measure\+\_\+func (\begin{DoxyParamCaption}\item[{F}]{func,  }\item[{std\+::vector$<$ T $>$ \&}]{data }\end{DoxyParamCaption})}
+
+Measure the execution time of a function that takes a vector as an argument
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em F} & Function type to be measured \\
+\hline
+{\em T} & Type of the elements in the vector to be sorted \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em func} & Function to be measured \\
+\hline
+{\em data} & First parameter type of the function to be measured (vector of T which is being copied) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Time taken by the function to execute in milliseconds 
+\end{DoxyReturn}

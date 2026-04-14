@@ -1,0 +1,169 @@
+\doxysection{generate\+\_\+data Namespace Reference}
+\hypertarget{namespacegenerate__data}{}\label{namespacegenerate__data}\index{generate\_data@{generate\_data}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespacegenerate__data_a0ad6c338c107ac4908af99eeffe7fb80}{name\+\_\+dict}}
+\item 
+dict \mbox{\hyperlink{namespacegenerate__data_abc36a95f3ac65ef8ba8b82a34137cb7e}{address\+\_\+dict}}
+\item 
+list \mbox{\hyperlink{namespacegenerate__data_ad328960c7dd032a3b4b2977c07872bd3}{sizes}}
+\item 
+str \mbox{\hyperlink{namespacegenerate__data_a8ccc7da5af8e7625d60665ee0dfa8e1c}{filename}} = f"{}./data/data\+\_\+\{size\}.csv"{}
+\item 
+\mbox{\hyperlink{namespacegenerate__data_aaf60c4cfe49afe1b48b4f9e1a2df5672}{encoding}}
+\item 
+\mbox{\hyperlink{namespacegenerate__data_a0765f876957a56230771293d9efd4013}{gender}} = random.\+choice(\mbox{[}"{}male"{}, "{}female"{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacegenerate__data_af9cabdae946941f937d3a226d48b46c4}{first}} = random.\+choice(\mbox{\hyperlink{namespacegenerate__data_a0ad6c338c107ac4908af99eeffe7fb80}{name\+\_\+dict}}\mbox{[}"{}male\+\_\+first\+\_\+names"{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacegenerate__data_a4f5e66e4c94756b8110fb98d4f00f929}{pat}} = random.\+choice(\mbox{\hyperlink{namespacegenerate__data_a0ad6c338c107ac4908af99eeffe7fb80}{name\+\_\+dict}}\mbox{[}"{}male\+\_\+patronymics"{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacegenerate__data_aa8ead2ae7b6d26e490548e5a83fad1ad}{surname}} = random.\+choice(\mbox{\hyperlink{namespacegenerate__data_a0ad6c338c107ac4908af99eeffe7fb80}{name\+\_\+dict}}\mbox{[}"{}male\+\_\+surnames"{}\mbox{]})
+\item 
+str \mbox{\hyperlink{namespacegenerate__data_a0590654c14f3d5b36632dfa00fd232b3}{fio}} = f"{}\{\mbox{\hyperlink{namespacegenerate__data_aa8ead2ae7b6d26e490548e5a83fad1ad}{surname}}\} \{\mbox{\hyperlink{namespacegenerate__data_af9cabdae946941f937d3a226d48b46c4}{first}}\} \{\mbox{\hyperlink{namespacegenerate__data_a4f5e66e4c94756b8110fb98d4f00f929}{pat}}\}"{}
+\item 
+str \mbox{\hyperlink{namespacegenerate__data_aa959e15fb718f50fa8d24a55fa2cb9ef}{inn}} = f"{}\{random.\+randint(100000000000, 999999999999)\}"{}
+\item 
+\mbox{\hyperlink{namespacegenerate__data_ad384f1d1a6e25a430e1695e03054a141}{house}} = random.\+randint(1, 250)
+\item 
+\mbox{\hyperlink{namespacegenerate__data_aebcfd39c9f7cfd9bc38c91bab82d0120}{street}} = random.\+choice(\mbox{\hyperlink{namespacegenerate__data_abc36a95f3ac65ef8ba8b82a34137cb7e}{address\+\_\+dict}}\mbox{[}"{}streets"{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacegenerate__data_a50b450cc66aa01301b088a54d99c94b1}{city}} = random.\+choice(\mbox{\hyperlink{namespacegenerate__data_abc36a95f3ac65ef8ba8b82a34137cb7e}{address\+\_\+dict}}\mbox{[}"{}cities"{}\mbox{]})
+\item 
+str \mbox{\hyperlink{namespacegenerate__data_a7f8edc74799a5a6fa0eeb54f0bd9b8b9}{address}} = f"{}г. \{\mbox{\hyperlink{namespacegenerate__data_a50b450cc66aa01301b088a54d99c94b1}{city}}\} ул. \{\mbox{\hyperlink{namespacegenerate__data_aebcfd39c9f7cfd9bc38c91bab82d0120}{street}}\} д. \{\mbox{\hyperlink{namespacegenerate__data_ad384f1d1a6e25a430e1695e03054a141}{house}}\}"{}
+\item 
+\mbox{\hyperlink{namespacegenerate__data_ae89b62abcb682815daa5f3282fc07a13}{tax\+\_\+amount}} = round(random.\+uniform(1000.\+0, 75000.\+0), 2)
+\item 
+str \mbox{\hyperlink{namespacegenerate__data_a8866c3072d4aee7a8bde5d1079b76c33}{line}} = f"{}\{\mbox{\hyperlink{namespacegenerate__data_a0590654c14f3d5b36632dfa00fd232b3}{fio}}\},\{\mbox{\hyperlink{namespacegenerate__data_aa959e15fb718f50fa8d24a55fa2cb9ef}{inn}}\},\{\mbox{\hyperlink{namespacegenerate__data_a7f8edc74799a5a6fa0eeb54f0bd9b8b9}{address}}\},\{\mbox{\hyperlink{namespacegenerate__data_ae89b62abcb682815daa5f3282fc07a13}{tax\+\_\+amount}}\}\textbackslash{}n"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacegenerate__data_a7f8edc74799a5a6fa0eeb54f0bd9b8b9}\label{namespacegenerate__data_a7f8edc74799a5a6fa0eeb54f0bd9b8b9} 
+\index{generate\_data@{generate\_data}!address@{address}}
+\index{address@{address}!generate\_data@{generate\_data}}
+\doxysubsubsection{\texorpdfstring{address}{address}}
+{\footnotesize\ttfamily str generate\+\_\+data.\+address = f"{}г. \{\mbox{\hyperlink{namespacegenerate__data_a50b450cc66aa01301b088a54d99c94b1}{city}}\} ул. \{\mbox{\hyperlink{namespacegenerate__data_aebcfd39c9f7cfd9bc38c91bab82d0120}{street}}\} д. \{\mbox{\hyperlink{namespacegenerate__data_ad384f1d1a6e25a430e1695e03054a141}{house}}\}"{}}
+
+\Hypertarget{namespacegenerate__data_abc36a95f3ac65ef8ba8b82a34137cb7e}\label{namespacegenerate__data_abc36a95f3ac65ef8ba8b82a34137cb7e} 
+\index{generate\_data@{generate\_data}!address\_dict@{address\_dict}}
+\index{address\_dict@{address\_dict}!generate\_data@{generate\_data}}
+\doxysubsubsection{\texorpdfstring{address\_dict}{address\_dict}}
+{\footnotesize\ttfamily dict generate\+\_\+data.\+address\+\_\+dict}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}streets"{}}:\ [}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Ленина"{}},\ \textcolor{stringliteral}{"{}Пушкина"{}},\ \textcolor{stringliteral}{"{}Гагарина"{}},\ \textcolor{stringliteral}{"{}Мира"{}},\ \textcolor{stringliteral}{"{}Советская"{}},\ \textcolor{stringliteral}{"{}Центральная"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Садовая"{}},\ \textcolor{stringliteral}{"{}Молодежная"{}},\ \textcolor{stringliteral}{"{}Школьная"{}},\ \textcolor{stringliteral}{"{}Лесная"{}},\ \textcolor{stringliteral}{"{}Набережная"{}},\ \textcolor{stringliteral}{"{}Кирова"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Маяковского"{}},\ \textcolor{stringliteral}{"{}Чкалова"{}},\ \textcolor{stringliteral}{"{}Горького"{}},\ \textcolor{stringliteral}{"{}Тверская"{}},\ \textcolor{stringliteral}{"{}Суворова"{}},\ \textcolor{stringliteral}{"{}Калинина"{}}}
+\DoxyCodeLine{00006\ \ \ \ \ ],}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}cities"{}}:\ [}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Москва"{}},\ \textcolor{stringliteral}{"{}Санкт-\/Петербург"{}},\ \textcolor{stringliteral}{"{}Новосибирск"{}},\ \textcolor{stringliteral}{"{}Екатеринбург"{}},\ \textcolor{stringliteral}{"{}Казань"{}},}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Нижний\ Новгород"{}},\ \textcolor{stringliteral}{"{}Челябинск"{}},\ \textcolor{stringliteral}{"{}Самара"{}},\ \textcolor{stringliteral}{"{}Омск"{}},\ \textcolor{stringliteral}{"{}Ростов-\/на-\/Дону"{}},}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Уфа"{}},\ \textcolor{stringliteral}{"{}Красноярск"{}},\ \textcolor{stringliteral}{"{}Пермь"{}},\ \textcolor{stringliteral}{"{}Воронеж"{}},\ \textcolor{stringliteral}{"{}Волгоград"{}},\ \textcolor{stringliteral}{"{}Краснодар"{}},}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Тюмень"{}},\ \textcolor{stringliteral}{"{}Саратов"{}}}
+\DoxyCodeLine{00012\ \ \ \ \ ]}
+\DoxyCodeLine{00013\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacegenerate__data_a50b450cc66aa01301b088a54d99c94b1}\label{namespacegenerate__data_a50b450cc66aa01301b088a54d99c94b1} 
+\index{generate\_data@{generate\_data}!city@{city}}
+\index{city@{city}!generate\_data@{generate\_data}}
+\doxysubsubsection{\texorpdfstring{city}{city}}
+{\footnotesize\ttfamily generate\+\_\+data.\+city = random.\+choice(\mbox{\hyperlink{namespacegenerate__data_abc36a95f3ac65ef8ba8b82a34137cb7e}{address\+\_\+dict}}\mbox{[}"{}cities"{}\mbox{]})}
+
+\Hypertarget{namespacegenerate__data_aaf60c4cfe49afe1b48b4f9e1a2df5672}\label{namespacegenerate__data_aaf60c4cfe49afe1b48b4f9e1a2df5672} 
+\index{generate\_data@{generate\_data}!encoding@{encoding}}
+\index{encoding@{encoding}!generate\_data@{generate\_data}}
+\doxysubsubsection{\texorpdfstring{encoding}{encoding}}
+{\footnotesize\ttfamily generate\+\_\+data.\+encoding}
+
+\Hypertarget{namespacegenerate__data_a8ccc7da5af8e7625d60665ee0dfa8e1c}\label{namespacegenerate__data_a8ccc7da5af8e7625d60665ee0dfa8e1c} 
+\index{generate\_data@{generate\_data}!filename@{filename}}
+\index{filename@{filename}!generate\_data@{generate\_data}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily str generate\+\_\+data.\+filename = f"{}./data/data\+\_\+\{size\}.csv"{}}
+
+\Hypertarget{namespacegenerate__data_a0590654c14f3d5b36632dfa00fd232b3}\label{namespacegenerate__data_a0590654c14f3d5b36632dfa00fd232b3} 
+\index{generate\_data@{generate\_data}!fio@{fio}}
+\index{fio@{fio}!generate\_data@{generate\_data}}
+\doxysubsubsection{\texorpdfstring{fio}{fio}}
+{\footnotesize\ttfamily str generate\+\_\+data.\+fio = f"{}\{\mbox{\hyperlink{namespacegenerate__data_aa8ead2ae7b6d26e490548e5a83fad1ad}{surname}}\} \{\mbox{\hyperlink{namespacegenerate__data_af9cabdae946941f937d3a226d48b46c4}{first}}\} \{\mbox{\hyperlink{namespacegenerate__data_a4f5e66e4c94756b8110fb98d4f00f929}{pat}}\}"{}}
+
+\Hypertarget{namespacegenerate__data_af9cabdae946941f937d3a226d48b46c4}\label{namespacegenerate__data_af9cabdae946941f937d3a226d48b46c4} 
+\index{generate\_data@{generate\_data}!first@{first}}
+\index{first@{first}!generate\_data@{generate\_data}}
+\doxysubsubsection{\texorpdfstring{first}{first}}
+{\footnotesize\ttfamily generate\+\_\+data.\+first = random.\+choice(\mbox{\hyperlink{namespacegenerate__data_a0ad6c338c107ac4908af99eeffe7fb80}{name\+\_\+dict}}\mbox{[}"{}male\+\_\+first\+\_\+names"{}\mbox{]})}
+
+\Hypertarget{namespacegenerate__data_a0765f876957a56230771293d9efd4013}\label{namespacegenerate__data_a0765f876957a56230771293d9efd4013} 
+\index{generate\_data@{generate\_data}!gender@{gender}}
+\index{gender@{gender}!generate\_data@{generate\_data}}
+\doxysubsubsection{\texorpdfstring{gender}{gender}}
+{\footnotesize\ttfamily generate\+\_\+data.\+gender = random.\+choice(\mbox{[}"{}male"{}, "{}female"{}\mbox{]})}
+
+\Hypertarget{namespacegenerate__data_ad384f1d1a6e25a430e1695e03054a141}\label{namespacegenerate__data_ad384f1d1a6e25a430e1695e03054a141} 
+\index{generate\_data@{generate\_data}!house@{house}}
+\index{house@{house}!generate\_data@{generate\_data}}
+\doxysubsubsection{\texorpdfstring{house}{house}}
+{\footnotesize\ttfamily generate\+\_\+data.\+house = random.\+randint(1, 250)}
+
+\Hypertarget{namespacegenerate__data_aa959e15fb718f50fa8d24a55fa2cb9ef}\label{namespacegenerate__data_aa959e15fb718f50fa8d24a55fa2cb9ef} 
+\index{generate\_data@{generate\_data}!inn@{inn}}
+\index{inn@{inn}!generate\_data@{generate\_data}}
+\doxysubsubsection{\texorpdfstring{inn}{inn}}
+{\footnotesize\ttfamily str generate\+\_\+data.\+inn = f"{}\{random.\+randint(100000000000, 999999999999)\}"{}}
+
+\Hypertarget{namespacegenerate__data_a8866c3072d4aee7a8bde5d1079b76c33}\label{namespacegenerate__data_a8866c3072d4aee7a8bde5d1079b76c33} 
+\index{generate\_data@{generate\_data}!line@{line}}
+\index{line@{line}!generate\_data@{generate\_data}}
+\doxysubsubsection{\texorpdfstring{line}{line}}
+{\footnotesize\ttfamily str generate\+\_\+data.\+line = f"{}\{\mbox{\hyperlink{namespacegenerate__data_a0590654c14f3d5b36632dfa00fd232b3}{fio}}\},\{\mbox{\hyperlink{namespacegenerate__data_aa959e15fb718f50fa8d24a55fa2cb9ef}{inn}}\},\{\mbox{\hyperlink{namespacegenerate__data_a7f8edc74799a5a6fa0eeb54f0bd9b8b9}{address}}\},\{\mbox{\hyperlink{namespacegenerate__data_ae89b62abcb682815daa5f3282fc07a13}{tax\+\_\+amount}}\}\textbackslash{}n"{}}
+
+\Hypertarget{namespacegenerate__data_a0ad6c338c107ac4908af99eeffe7fb80}\label{namespacegenerate__data_a0ad6c338c107ac4908af99eeffe7fb80} 
+\index{generate\_data@{generate\_data}!name\_dict@{name\_dict}}
+\index{name\_dict@{name\_dict}!generate\_data@{generate\_data}}
+\doxysubsubsection{\texorpdfstring{name\_dict}{name\_dict}}
+{\footnotesize\ttfamily dict generate\+\_\+data.\+name\+\_\+dict}
+
+\Hypertarget{namespacegenerate__data_a4f5e66e4c94756b8110fb98d4f00f929}\label{namespacegenerate__data_a4f5e66e4c94756b8110fb98d4f00f929} 
+\index{generate\_data@{generate\_data}!pat@{pat}}
+\index{pat@{pat}!generate\_data@{generate\_data}}
+\doxysubsubsection{\texorpdfstring{pat}{pat}}
+{\footnotesize\ttfamily generate\+\_\+data.\+pat = random.\+choice(\mbox{\hyperlink{namespacegenerate__data_a0ad6c338c107ac4908af99eeffe7fb80}{name\+\_\+dict}}\mbox{[}"{}male\+\_\+patronymics"{}\mbox{]})}
+
+\Hypertarget{namespacegenerate__data_ad328960c7dd032a3b4b2977c07872bd3}\label{namespacegenerate__data_ad328960c7dd032a3b4b2977c07872bd3} 
+\index{generate\_data@{generate\_data}!sizes@{sizes}}
+\index{sizes@{sizes}!generate\_data@{generate\_data}}
+\doxysubsubsection{\texorpdfstring{sizes}{sizes}}
+{\footnotesize\ttfamily list generate\+\_\+data.\+sizes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ 100,\ 250,\ 500,\ 750,\ 1500,\ 2500,\ 5000,\ 7500,\ 10000,}
+\DoxyCodeLine{00003\ \ \ \ \ 15000,\ 25000,\ 50000,\ 75000,\ 100000,\ 125000,\ 150000}
+\DoxyCodeLine{00004\ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespacegenerate__data_aebcfd39c9f7cfd9bc38c91bab82d0120}\label{namespacegenerate__data_aebcfd39c9f7cfd9bc38c91bab82d0120} 
+\index{generate\_data@{generate\_data}!street@{street}}
+\index{street@{street}!generate\_data@{generate\_data}}
+\doxysubsubsection{\texorpdfstring{street}{street}}
+{\footnotesize\ttfamily generate\+\_\+data.\+street = random.\+choice(\mbox{\hyperlink{namespacegenerate__data_abc36a95f3ac65ef8ba8b82a34137cb7e}{address\+\_\+dict}}\mbox{[}"{}streets"{}\mbox{]})}
+
+\Hypertarget{namespacegenerate__data_aa8ead2ae7b6d26e490548e5a83fad1ad}\label{namespacegenerate__data_aa8ead2ae7b6d26e490548e5a83fad1ad} 
+\index{generate\_data@{generate\_data}!surname@{surname}}
+\index{surname@{surname}!generate\_data@{generate\_data}}
+\doxysubsubsection{\texorpdfstring{surname}{surname}}
+{\footnotesize\ttfamily generate\+\_\+data.\+surname = random.\+choice(\mbox{\hyperlink{namespacegenerate__data_a0ad6c338c107ac4908af99eeffe7fb80}{name\+\_\+dict}}\mbox{[}"{}male\+\_\+surnames"{}\mbox{]})}
+
+\Hypertarget{namespacegenerate__data_ae89b62abcb682815daa5f3282fc07a13}\label{namespacegenerate__data_ae89b62abcb682815daa5f3282fc07a13} 
+\index{generate\_data@{generate\_data}!tax\_amount@{tax\_amount}}
+\index{tax\_amount@{tax\_amount}!generate\_data@{generate\_data}}
+\doxysubsubsection{\texorpdfstring{tax\_amount}{tax\_amount}}
+{\footnotesize\ttfamily generate\+\_\+data.\+tax\+\_\+amount = round(random.\+uniform(1000.\+0, 75000.\+0), 2)}
+

@@ -1,0 +1,54 @@
+\doxysection{taxpayer.\+hpp File Reference}
+\hypertarget{taxpayer_8hpp}{}\label{taxpayer_8hpp}\index{taxpayer.hpp@{taxpayer.hpp}}
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for taxpayer.\+hpp\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classTaxpayer}{Taxpayer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{classTaxpayer}{Taxpayer}} $>$ \mbox{\hyperlink{taxpayer_8hpp_a3e0e32a348a7ffc4cd8cdd645509d031}{read\+Data}} (const std\+::string \&filename)
+\item 
+static void \mbox{\hyperlink{taxpayer_8hpp_a701477fe6e53c98c9f203618327cf622}{write\+Data}} (const std\+::string \&filename, const std\+::vector$<$ \mbox{\hyperlink{classTaxpayer}{Taxpayer}} $>$ \&data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{taxpayer_8hpp_a3e0e32a348a7ffc4cd8cdd645509d031}\label{taxpayer_8hpp_a3e0e32a348a7ffc4cd8cdd645509d031} 
+\index{taxpayer.hpp@{taxpayer.hpp}!readData@{readData}}
+\index{readData@{readData}!taxpayer.hpp@{taxpayer.hpp}}
+\doxysubsubsection{\texorpdfstring{readData()}{readData()}}
+{\footnotesize\ttfamily static std\+::vector$<$ \mbox{\hyperlink{classTaxpayer}{Taxpayer}} $>$ read\+Data (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Read data from CSV
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & File name to read the data from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of \doxylink{classTaxpayer}{Taxpayer} objects read from the file 
+\end{DoxyReturn}
+\Hypertarget{taxpayer_8hpp_a701477fe6e53c98c9f203618327cf622}\label{taxpayer_8hpp_a701477fe6e53c98c9f203618327cf622} 
+\index{taxpayer.hpp@{taxpayer.hpp}!writeData@{writeData}}
+\index{writeData@{writeData}!taxpayer.hpp@{taxpayer.hpp}}
+\doxysubsubsection{\texorpdfstring{writeData()}{writeData()}}
+{\footnotesize\ttfamily static void write\+Data (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classTaxpayer}{Taxpayer}} $>$ \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Write vector data to CSV
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & File name to save the data \\
+\hline
+{\em data} & Vector of \doxylink{classTaxpayer}{Taxpayer} objects to be saved \\
+\hline
+\end{DoxyParams}
