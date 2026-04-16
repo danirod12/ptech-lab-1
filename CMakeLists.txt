@@ -8,5 +8,4 @@ find_package(Threads REQUIRED)
 add_executable(ptech main.cpp
         taxpayer.hpp
         sorts.hpp
-        misc.hpp
-        file_utils.hpp)
+        misc.hpp)

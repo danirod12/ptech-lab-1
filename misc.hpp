@@ -1,6 +1,7 @@
 #ifndef PTECH_MISC_HPP
 #define PTECH_MISC_HPP
 #include <ctime>
+#include <vector>
 
 /**
  * Measure the execution time of a function that takes a vector as an argument
